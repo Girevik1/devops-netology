@@ -40,11 +40,18 @@ Password: <br />
 [Unit]<br />
 Description=Node Exporter<br /><br />
 [Service]<br />
-ExecStart=/opt/node_exporter/node_exporter<br />
+ExecStart=/opt/node_exporter/node_exporter $MY_OPTIONS<br />
 EnvironmentFile=/etc/default/node_exporter<br /><br />
 [Install]<br />
-WantedBy=default.target
+WantedBy=multi-user.target
 >---
+> В файле EnvironmentFile задаю переменную, MY_OPTIONS="-a -h"<br />
+> (например мой сервис параметром -а показывает все логи, а параметром -h показывает в логах человекочитаемые цифры в килобайтах, 
+> мегабайтах и так далее)<br />
+Далее, в ExecStart я указываю основную команду ```ExecStart=/opt/node_exporter/node_exporter $MY_OPTIONS```.<br />
+По факту, строка запуска будет такой - ```/opt/node_exporter/node_exporter -a -h```<br />
+Получается, в файле можно указать несколько переменных для передачи опций, а можно все в одной переменной<br />
+> ---
 >***При перезапуске переменная окружения выставляется:***<br />
 ```vagrant@vagrant:/etc/systemd/system$``` sudo cat /proc/1809/environ<br />
 LANG=en_US.UTF-8LANGUAGE=en_US:PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin<br />
