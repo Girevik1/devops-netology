@@ -52,7 +52,30 @@ done
 
 ### Ваш скрипт:
 ```bash
-???
+#!/bin/bash
+
+ip_arr=(
+    192.168.0.1
+    173.194.222.113
+    87.250.250.242
+)
+
+port=80
+count=5
+
+for ip in ${ip_arr[@]}
+do
+    for (( i = 0; i < $count; i++))
+    do
+        nc -zw1 $ip $port
+        if (($? == 0))
+        then
+            echo "`date '+%Y-%m-%d %T'` ${ip}:${port}    UP" >> log
+        else
+            echo "`date '+%Y-%m-%d %T'` ${ip}:${port}    DOWN" >> log
+        fi
+    done
+done
 ```
 
 ## Обязательная задача 4
@@ -60,14 +83,39 @@ done
 
 ### Ваш скрипт:
 ```bash
-???
-```
+#!/bin/bash
 
-## Дополнительное задание (со звездочкой*) - необязательно к выполнению
+ip_arr=(
+    192.168.0.1
+    173.194.222.113
+    87.250.250.242
+)
 
-Мы хотим, чтобы у нас были красивые сообщения для коммитов в репозиторий. Для этого нужно написать локальный хук для git, который будет проверять, что сообщение в коммите содержит код текущего задания в квадратных скобках и количество символов в сообщении не превышает 30. Пример сообщения: \[04-script-01-bash\] сломал хук.
+port=80
+count=5
+is_down=0
 
-### Ваш скрипт:
-```bash
-???
+while (($is_down == 0))
+do
+    for ip in ${ip_arr[@]}
+    do
+        if (($is_down == 1))
+        then
+            break
+        fi
+        echo $ip
+        for (( i = 0; i < $count; i++))
+        do
+            nc -zw1 $ip $port
+            is_down=$?
+            if (($is_down == 0))
+            then
+                echo "`date '+%Y-%m-%d %T'` ${ip}:${port}    UP" >> log
+            else
+                echo "`date '+%Y-%m-%d %T'` ${ip}:${port}    DOWN" >> error
+                break
+            fi
+        done
+    done
+done
 ```
