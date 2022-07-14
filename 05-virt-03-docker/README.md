@@ -6,8 +6,10 @@
  - реализуйте функциональность: запуск веб-сервера в фоне с индекс-страницей, содержащей HTML-код.
 
 `Ответ:`<br>
+
+ `UPD` Добавил COPY в Dockerfile. Скопировал index.php с локальной машины в контейнер
  https://hub.docker.com/r/girevik1/customubuntunginx <br>
- `docker pull girevik1/customubuntunginx:v02`<br>
+ `docker pull girevik1/customubuntunginx:1.0`<br>
  `docker run -d -p 4444:80 name_container_or_id`<br>
 И можем смотреть на порту 4444 наш html <br>
 `localhost:4444`

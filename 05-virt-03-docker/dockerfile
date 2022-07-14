@@ -3,3 +3,4 @@ FROM ubuntu/nginx
 # install basic apps
 RUN apt-get clean && apt-get update
 RUN apt-get install -qy nano
+COPY ./index.html /var/www/html/
