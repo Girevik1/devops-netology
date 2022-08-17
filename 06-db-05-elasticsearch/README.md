@@ -47,7 +47,7 @@ CMD ["/app/elasticsearch-7.17.4/bin/elasticsearch"]
 
 ![drawing](assets/res1.png)
 
-###Задача 2
+### Задача 2
 
 - Создать индексы
 
@@ -73,7 +73,7 @@ CMD ["/app/elasticsearch-7.17.4/bin/elasticsearch"]
 
 ![drawing](assets/res4.png)
 
-###Задача 3
+### Задача 3
 
 - Создать репозиторий
 
