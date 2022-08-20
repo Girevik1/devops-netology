@@ -32,4 +32,4 @@ export TF_VAR_yandex_folder_id=`yc config get folder-id`
 
 >При помощи `packer`
 
-* [Ссылку на репозиторий](https://hub.docker.com/r/girevik1/elasticsearch)
+* [Ссылку на репозиторий](https://github.com/Girevik1/devops-netology/tree/main/07-terraform-02-syntax/terraform)
