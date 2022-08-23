@@ -48,7 +48,9 @@ resource "yandex_compute_instance_group" "group01" {
   service_account_id              = var.yandex_token
   name               = terraform.workspace
   folder_id          = var.yandex_folder_id
-#  service_account_id = var.service_account_id
+
+  for_each = local.id
+  name = "vm-${each.key}-${terraform.workspace}"
 
   deploy_policy {
     max_expansion   = local.instance_count["${terraform.workspace}"]
