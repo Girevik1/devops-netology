@@ -81,3 +81,4 @@ func main() {
 }
 ```
 
+[Cсылка на код](https://github.com/Girevik1/devops-netology/tree/main/07-terraform-05-golang/src)
