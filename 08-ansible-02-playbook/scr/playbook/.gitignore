@@ -1,0 +1,4 @@
+files/*
+*.tar
+*.gz
+*.tar.gz
