@@ -1,4 +1,4 @@
-###Group vars
+### Group vars
 >* java_oracle_jdk_package - пакет для установки Java
 >* java_jdk_version - версия Java
 >* elastic_home - домашний каталог для Elasticsearch
@@ -6,11 +6,11 @@
 >* kibana_home - домашний каталога для Kibana
 >* kibana_version - версия Kibana
 
-###Play description
+### Play description
 >- Поднимаются локально докер контейнеры
 >- В контейнеры устанавливаются Java, ElasticSearch, Kibana.
 
-###Install Java
+### Install Java
 >Установлены тэги java для дальнейшего использования и отладки
 
 >* установка переменных (facts)
@@ -18,14 +18,14 @@
 >* создание рабочего каталога
 >* распаковка пакета
 >* создание по шаблону переменных окружений (templates)
-###Install Elastic
+### Install Elastic
 >Установлены тэги elastic для дальнейшего использования и отладки
 
 >* загрузка установочного пакета
 >* создание рабочего каталога
 >* распаковка в рабочий каталог из пакета
 >* создание по шаблону переменных окружений (templates)
-###Install Kibana
+### Install Kibana
 >установлены тэги kibana для дальнейшего использования и отладки
 
 >* загрузка установочного пакета

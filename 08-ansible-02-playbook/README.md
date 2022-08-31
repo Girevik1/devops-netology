@@ -168,9 +168,9 @@ kibana:
 
 9. Подготовьте `README.md` файл по своему `playbook`. В нём должно быть описано: что делает `playbook`, какие у него есть параметры и теги.
 
-[Cсылка на README.md](https://github.com/Girevik1/devops-netology/tree/main/07-terraform-05-golang/src)
+[Cсылка на README.md](https://github.com/Girevik1/devops-netology/blob/main/08-ansible-02-playbook/scr/README.md)
 
 10. Готовый `playbook` выложите в свой репозиторий, в ответ предоставьте ссылку на него.
 git rm -f ./08-ansible-02-playbook/scr/playbook/elasticsearch-7.10.1-linux-x86_64.tar.gz
 
-[Cсылка на playbook](https://github.com/Girevik1/devops-netology/tree/main/07-terraform-05-golang/src)
+[Cсылка на playbook](https://github.com/Girevik1/devops-netology/tree/main/08-ansible-02-playbook/scr/playbook)
