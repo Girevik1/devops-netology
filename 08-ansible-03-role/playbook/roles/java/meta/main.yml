@@ -1,0 +1,15 @@
+galaxy_info:
+  author: Alexey Metlyakov
+  description: simple install openjdk from remote url
+  company: Netology
+  license: BSD-3-Clause
+  min_ansible_version: 2.1
+  platforms:
+    - name: CentOS
+      versions:
+        - 7
+        - 8
+    - name: ubuntu
+      versions: all
+  galaxy_tags: [java, openjdk]
+dependencies: []

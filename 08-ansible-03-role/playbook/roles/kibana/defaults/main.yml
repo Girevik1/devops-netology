@@ -1,0 +1,5 @@
+---
+  kibana_version: 7.10.1
+  kibana_home: "/opt/kibana/{{ kibana_version }}"
+  kibana_package: "../../files/kibana-{{ kibana_version }}-linux-x86_64.tar.gz"
+# defaults file for kibana

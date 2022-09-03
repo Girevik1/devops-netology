@@ -1,0 +1,10 @@
+---
+- hosts: all
+  roles:
+  - java
+- hosts: elasticsearch
+  roles:
+  - elastic
+- hosts: kibana
+  roles:
+  - kibana
