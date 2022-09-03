@@ -43,10 +43,9 @@
 
 # Ответ
 
-- https://github.com/ozaryx/elastic-role
-- https://github.com/ozaryx/kibana-role
-- https://github.com/ozaryx/logstash-role
-- https://github.com/ozaryx/mnt-homeworks/tree/master/08-ansible-03-role/playbook
+- https://github.com/Girevik1/elastic-role
+- https://github.com/Girevik1/kibana-role
+- https://github.com/Girevik1/devops-netology/tree/main/08-ansible-03-role/playbook
 
 ## Необязательная часть
 
