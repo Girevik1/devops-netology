@@ -52,4 +52,4 @@
 
 Если всё отработало в рамках ожидания - выгрузить схемы workflow для импорта в XML. Файлы с workflow приложить к решению задания.
 
->XML [bug](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) and [other](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+>XML [bug](https://github.com/Girevik1/devops-netology/blob/main/09-ci-01-intro/import/bug.xml) and [other](https://github.com/Girevik1/devops-netology/blob/main/09-ci-01-intro/import/other.xml)
